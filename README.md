@@ -13,4 +13,4 @@
 10. Project presentation
 
 #### Bibliography
-* [Forecasting: Principles and Practice]([https://tjzhifei.github.io/resources/NLTK.pdf](https://otexts.com/fpp3/))
+* [Forecasting: Principles and Practice](https://tjzhifei.github.io/resources/NLTK.pdf](https://otexts.com/fpp3/))
