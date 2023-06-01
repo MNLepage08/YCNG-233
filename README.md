@@ -33,24 +33,26 @@
   - ARIMA RECAP: Look at the plot, Is there a trend?, Is there seasonality?, Compute ACP and PACP. Even if SARIMA is suitable for any situation, it is much harder to parametrize.
   - [Exponential Smoothing (ES): ](https://machinelearningmastery.com/exponential-smoothing-for-time-series-forecasting-in-python/) Single Exponential Smootthing (SES), Double Exponential Smoothing (Holt), Triple Exponential Smoothing (Holt-Winters). 
   - Machine Learning models: Machine learning models extends the idea of an AR(p) model. P parameter is the size of the history. Build the dataset by sliding the “now”. Dimension of X = p, Dimension of output = h. Train any regression model. For a new “now”, provide the X values as the p-lags. Suited for multivariate time series...
-  - [The M4 Competition: ](https://www.sciencedirect.com/science/article/pii/S0169207019301128#fig1)100,000 time series and 61 forecasting methods.
-  - [Introducing a New Hybrid ES-RNN Model ](https://www.uber.com/blog/m4-forecasting-competition/)
   - Recap: What is the granularity of the problem? Does the time series miss some data? Where the time series has been captured? What should be the size of the history? Does the time series have a trend? Does the time series have seasonality? Is the time series long or short? Is the time series multivariate? How many time series do I have to forecast?
-  - [Assigment 4: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%204.ipynb)Statistical methods and Machine Learning for time series forecasting on short horizon.
+  - [Assigment 3: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%204.ipynb)Statistical methods and Machine Learning for time series forecasting on short horizon.
 
 #### 5. Deep Learning for time series
+  - M(3,4,5)-Competitions: Blind competition to Benchmark best time series forecasting methods. Each competition brought more attention. Each competition led to different conclusions.
   - [Statistical, machine learning and deep learning forecasting methods: Comparisons and ways forward](https://www.tandfonline.com/doi/full/10.1080/01605682.2022.2118629)
   - [Statistical and Machine Learning forecasting methods: Concerns and ways forward](https://www.researchgate.net/publication/323847484_Statistical_and_Machine_Learning_forecasting_methods_Concerns_and_ways_forward)
-  - [The M3-Competition: results, conclusions and implications](https://www.sciencedirect.com/science/article/abs/pii/S0169207000000571?via%3Dihub)
-  - [M5 accuracy competition: Results, findings, and conclusions](https://www.sciencedirect.com/science/article/pii/S0169207021001874)
-  - [N-BEATS: NEURAL BASIS EXPANSION ANALYSIS FOR INTERPRETABLE TIME SERIES FORECASTING](https://www.researchgate.net/publication/333418084_N-BEATS_Neural_basis_expansion_analysis_for_interpretable_time_series_forecasting)
-  - [N-HiTS: Neural Hierarchical Interpolation for Time Series Forecasting](https://arxiv.org/abs/2201.12886)
+  - [The M3-Competition: results, conclusions and implications](https://www.sciencedirect.com/science/article/abs/pii/S0169207000000571?via%3Dihub). 3003 time series & 24 methods. Conclusions: Ensemble > Single methods. Short horizon (Statistical) vs. Long horizon (DL methods). Seasonality? (High (statistical) vs. Low (DL)). Statistical are very good. ML? No reason to spend time on it (didn't try lot of them...)
+  - [The M4 Competition: ](https://www.sciencedirect.com/science/article/pii/S0169207019301128#fig1)100,000 time series and 61 forecasting methods. Most of the dataset has time series below 250 data points.Conclusions: Combination (ensemble) outperforms single methods (Statistical and Hybrid). Hybrid methods outperforms other methods. Pure ML doesn't work.
+  -  [M4 N-BEATS: NEURAL BASIS EXPANSION ANALYSIS FOR INTERPRETABLE TIME SERIES FORECASTING: ](https://www.researchgate.net/publication/333418084_N-BEATS_Neural_basis_expansion_analysis_for_interpretable_time_series_forecasting) Pure DL, 1 model per frequency. Ensemble of models.
+  -  M4 Ensemble weighted method (EWM): Helps with Few-Shot learning.
+  - [Introducing a New Hybrid ES-RNN Model ](https://www.uber.com/blog/m4-forecasting-competition/)
+  - [N-HiTS: Neural Hierarchical Interpolation for Time Series Forecasting: ](https://arxiv.org/abs/2201.12886) Different datasets (“All large-scale datasets used in our empirical studies are publicly available and have been used in neural forecasting literature, particularly in the context of long-horizon”)
+  - [M5 accuracy competition: Results, findings, and conclusions: ](https://www.sciencedirect.com/science/article/pii/S0169207021001874)42 000 hierarchical times series (Walmart). Kaggle. Predict sales at different levels. For the first time, it focused on series that display intermittency, i.e., sporadic demand including zeros. Predict daily unit sales. Horizon = 28 days. Conclusions: LightGBM is superior. Ensemble methods are better. The external adjustments utilized in some methods were beneficial for improving the accuracy of the baseline forecasting models. Exogenous/explanatory variables were important for improving the forecasting accuracy of time series methods. Hierarchical is a different problem => top down, bottom up, middle out... still good results at the lowest level...
 
-7. Ensemble learning and its application on time series problems
-8. Transfer learning and its application on time series problems
-9. Graph neural networks and their applications on time series problems
-10. Sequence models and their applications on time series problems
-11. Project presentation
+#### 6. Ensemble learning and its application on time series problems
+7. Transfer learning and its application on time series problems
+8. Graph neural networks and their applications on time series problems
+9. Sequence models and their applications on time series problems
+10. Project presentation
 
 #### Bibliography
 * [Forecasting: Principles and Practice](https://otexts.com/fpp3/)
