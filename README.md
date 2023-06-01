@@ -20,8 +20,7 @@
   - Distance based methods: Shapelet, SAX, BOSS, BOSSVS, HIVE-COTE,  DTW. Pattern based and tolerate some flexibility on signal amplitude. [Pyts Library](https://pyts.readthedocs.io/en/stable/), [DTW Library](https://pypi.org/project/dtw-python/)
   - [Assingment 2: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%202.ipynb) Time Series with distance based methods (Shapelet & SAX-VSM)
 
-
-4. Time series forecasting
+#### 3. Time series forecasting
 5. Statistical methods for time series forecasting
 6. Deep Learning for time series
 7. Ensemble learning and its application on time series problems
