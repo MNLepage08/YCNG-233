@@ -11,8 +11,6 @@
   - [Time Series Decomposition: ](https://machinelearningmastery.com/decompose-time-series-data-trend-seasonality/) Involves thinking of a series as a combination of level, trend, seasonality, and noise components.
   - [Stationary vs. Non-Stationary: ](https://machinelearningmastery.com/time-series-data-stationary-python/) A stationary series is one where the values of the series is not a function of time. Mean(ts) = Mean(slide), Variance(ts) = Variance(slide), Autocorrelation(ts) = Autocorrelation(slice). Test: Augmented Dickey–Fuller test
   - [Assignment 1: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%201.ipynb)Data Exploration on Covid-19 (Preprocessing, Correlation, ACF & PACF, Decomposition, Stationarity)
-  - Simplest model (Benchmark): Prediction = mean of the time series, Prediction = the last seen value.
-  - 
 
 #### 2. Time series classification
   - Supervised Learning: Dataset D = {X,Y} (X = [x1(t), ... ,xN(t)], Y = [y1, ... , yN] | yi is defined in a list of K classes) containing N time series and N labels. The task is to find for a new time series x(t) the corresponding class. Classification problem.
@@ -27,6 +25,7 @@
   - Preprocessing: Parse dates, Resample (sum / mean), Create X lags, Create Y outputs.
   - Evaluation metrucs: Mean absolute error (MAE), Root mean sqared error (RMSE), Mean absolute percentage error (MAPE), Symmetric mean absolute percentage error (sMAPE).
   - [Evaluation Strategy: ](https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/) k-fold Cross Validation Does Not Work For Time Series Data and Techniques That You Can Use Instead. Train-Test split that respect temporal order of observations. Multiple Train-Test splits that respect temporal order of observations. Walk-Forward Validation where a model may be updated each time step new data is received.
+  - Simplest model (Benchmark): Prediction = mean of the time series, Prediction = the last seen value.
   - ARIMA Family model: No trend & seasonality -- AR(p), MA(q), ARMA(p, q). Trend with no seasonality -- ARIMA(p, d, q). Trend & sesasonality: SARIMA(p, d, q)(P, D, Q, s).
   - Exponential Smoothing: Suitable method when no clear trend or seasonality can be observed.
 
@@ -37,6 +36,7 @@
   - [The M4 Competition: ](https://www.sciencedirect.com/science/article/pii/S0169207019301128#fig1)100,000 time series and 61 forecasting methods.
   - [Introducing a New Hybrid ES-RNN Model ](https://www.uber.com/blog/m4-forecasting-competition/)
   - Recap: What is the granularity of the problem? Does the time series miss some data? Where the time series has been captured? What should be the size of the history? Does the time series have a trend? Does the time series have seasonality? Is the time series long or short? Is the time series multivariate? How many time series do I have to forecast?
+  - [Assigment 4: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%204.ipynb)Statistical methods and Machine Learning for time series forecasting on short horizon.
 
 #### 5. Deep Learning for time series
   - [Statistical, machine learning and deep learning forecasting methods: Comparisons and ways forward](https://www.tandfonline.com/doi/full/10.1080/01605682.2022.2118629)
