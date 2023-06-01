@@ -12,7 +12,8 @@
   - [Stationary vs. Non-Stationary: ](https://machinelearningmastery.com/time-series-data-stationary-python/) A stationary series is one where the values of the series is not a function of time. Mean(ts) = Mean(slide), Variance(ts) = Variance(slide), Autocorrelation(ts) = Autocorrelation(slice). Test: Augmented Dickey–Fuller test
   - [Assignment 1: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%201.ipynb)Data Exploration on Covid-19 (Preprocessing, Correlation, ACF & PACF, Decomposition, Stationarity)
 
-3. Time series classification
+#### 2. Time series classification
+
 4. Time series forecasting
 5. Statistical methods for time series forecasting
 6. Deep Learning for time series
