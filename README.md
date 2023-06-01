@@ -13,6 +13,12 @@
   - [Assignment 1: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%201.ipynb)Data Exploration on Covid-19 (Preprocessing, Correlation, ACF & PACF, Decomposition, Stationarity)
 
 #### 2. Time series classification
+  - Supervised Learning: Dataset D = {X,Y} (X = [x1(t), ... ,xN(t)],Y = [y1, ... , yN] | yi is defined in a list of K classes) containing N time series and N labels. The task is to find for a new time series x(t) the corresponding class. Classification problem.
+  - Unsupervised or semi-supervised: D = {X}, X = [x1(t), ... ,xN(t)]. The task is to detect if a new time series x(t) have a similar behavior than time series in D. Anomaly detection.
+  - Ontology: Feature based (x(t) --> Feature extraction --> Classifier --> Class), Distance based (x(t) --> Distance --> Class), Deep Learning (x(t), Classifier --> Class)
+  - Feature based methods: The main idea is to extract relevant information from the time series and provide it to a classification algorithm. Simple feature ex: mean, variance, RMS. Energy/power features: Shannon entropy, coefficient from DFT (Discrete Fourier Transformation). Correlation features: number/position of the peaks in the autocorrelation... Limits: Features must be defined, High dimensionality, Non stationarity, Time structure is not considered.  [TsFresh Library](https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html)
+  - Distance based methods: Shapelet, SAX, BOSS, BOSSVS, HIVE-COTE,  DTW. Pattern based and tolerate some flexibility on signal amplitude. [Pyts Library](https://pyts.readthedocs.io/en/stable/), [DTW Library](https://pypi.org/project/dtw-python/)
+
 
 4. Time series forecasting
 5. Statistical methods for time series forecasting
