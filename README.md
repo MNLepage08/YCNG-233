@@ -28,7 +28,7 @@
   - Evaluation metrucs: Mean absolute error (MAE), Root mean sqared error (RMSE), Mean absolute percentage error (MAPE), Symmetric mean absolute percentage error (sMAPE).
   - [Evaluation Strategy: ](https://machinelearningmastery.com/backtest-machine-learning-models-time-series-forecasting/) k-fold Cross Validation Does Not Work For Time Series Data and Techniques That You Can Use Instead. Train-Test split that respect temporal order of observations. Multiple Train-Test splits that respect temporal order of observations. Walk-Forward Validation where a model may be updated each time step new data is received.
   - ARIMA Family model: AR(p), MA(q), ARMA(p, q), ARIMA(p, d, q), SARIMA(p, d, q)(P, D, Q, s) 
-  - Exponential Smoothung: Suitable method when no clear trend or seasonality can be observed.
+  - Exponential Smoothing: Suitable method when no clear trend or seasonality can be observed.
 
 #### 4. Statistical methods for time series forecasting
 
