@@ -1,6 +1,9 @@
 # YCNG-233: Time Series Analysis Fundamentals
-  
 
+<p align="center">
+<img width="500" alt="Capture d’écran, le 2023-06-04 à 09 54 32" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/5145feb1-e4f7-4cd5-a5f6-bb684c78b947">
+
+  
 ## :rocket: Assignments
 
 1. [Data Exploration on Covid-19 for the new cases & deaths: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%201.ipynb)Collect Covid-19 from Canada dataset. Preprocess (missing - duplicate - negative values, date conversion), Pearson correlation on new cases/deaths, ACF & PACF, decomposition and stationarity of time series.<p>
