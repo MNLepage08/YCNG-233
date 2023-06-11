@@ -146,14 +146,20 @@
   
 * <img width="407" align="left" alt="Capture d’écran, le 2023-06-08 à 16 31 07" src="https://github.com/MNLepage08/YCNG-228/assets/113123425/62b18746-60b1-462b-8a02-67fd912ce208">**Boosting:** Create a week classifier. Look at misclassified data points. Increase the weight of those misclassified data point. Repeat for create a week classifier... [AdaBoost](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html). [Gradient boosting:](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html) don't change weight but train on residual errors.<p>
 
-Boosting does more to reduce bias than variance. For this reason, boosting tends to improve upon its base models most when they have high bias and low variance. Boosting’s bias reduction comes from the way it adjusts its distribution over the training set. However, this method of adjusting the training set distribution causes boosting to have difficulty when the training data are noisy. Subsample parameter == bagging and boosting (never used).<p>
+Boosting does more to reduce bias than variance. For this reason, boosting tends to improve upon its base models most when they have high bias and low variance. Boosting’s bias reduction comes from the way it adjusts its distribution over the training set. However, this method of adjusting the training set distribution causes boosting to have difficulty when the training data are noisy. Subsample parameter == bagging and boosting (never used).
   
---> Ma Model & lightGBM. <p>
+--> MA Model & lightGBM. <p>
   
 * [Tune lighGBM:](https://lightgbm.readthedocs.io/en/latest/Parameters-Tuning.html#tune-parameters-for-the-leaf-wise-best-first-tree) Parameters that affect the structure and learning of the decision trees, the training speed, for better accuracy, to cambat overfitting.<p>
   
-**Structure (complexity of the problem):** 
+* **Structure (complexity of the problem):** max_depth: max depth for each tree [3-12]. num_leaves: number of decision leaves in a single tree 2^(max_depth)[8-4096]. min_data_in_leaf: needs a certain amount of data to evaluate the leaf. Can be tune according the dataset size (tricky). **Accuracy:** Learning_rate: [0.01-0.3] (can be lower), decrease --> slower and more accurate. n_estimators: number of estimator, increase --> better accuracy + overfitting. increase n_estimators and decrease learning rate. **Control overfitting:** lambda_L1 and lambda_L2: [0-100]. min_grain_to_split: [0-15]. Bagging_fraction, feature_fraction: [0-1].<p>
   
+* <img width="500" align="right" alt="Capture d’écran, le 2023-06-11 à 12 48 06" src="https://github.com/MNLepage08/YCNG-228/assets/113123425/faf9079b-8ba8-405c-9846-7cdf0ef4422e">[Staking: ](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.StackingClassifier.html#sklearn-ensemble-stackingclassifier)In practice, base learners are different algorithms. The new dataset is often combined with the original dataset to train the Meta Model. The Meta-Learner is often a logistic regression but in theory, any algorithm can be used. Pretrained models can be used. This opens the door to transfer learning (next session). Can be used to augment the dataset and add external variables.<p>
+  
+* **Ensemble methods - Approach 1:** Models are trained on different view of the same dataset (Bagging, Boosting: man, median, vote). **Approach 2:** Models are trained on the same dataset but using different algoriths (Stacking). **Approach 3:** Models are trained on different datasets, selection of the top k models, train a Meta model. Ensemble weighted models.<p>
+  
+* **Continuous(/al) Learning**
+ 
 </details>
   
 ## :books: Bibliography
