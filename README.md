@@ -12,7 +12,7 @@
 
 3. [Use Statistical methods & Machine Learning based approach for time series forecasting on short horizon: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time%20Series%20-%20Course%204.ipynb)Collect Hydro-Quebec Dataset. Preprocess for duplicate(time change) & 0 values. Exploration result for find parameter of ARIMA Family (stationarity, trend, seasonality, ACF, PACF, History). Build SARIMA (sMAPE: 6.54), Holt-Winters (sMAPE: 6.13), Linear Regression (sMAPE: 6.69), Decision Tree (sMAPE: 8.19) and SVM (sMAPE: 6.84). Visualize the forecast result.
    
-4. [Use Deep Feedforward Neural Network and LSTM model for time series forecasting on short horizon:]() Collect electricity consumption in New York. Preprocess to corect date format. Optimal window size selection with the pattern into the data and some experimentation. Build the architecture of these models by iteration to find the hyperparameter optimization. DNN: MAE = 1.0032, LSTM = 1.0070.
+4. [Use Deep Feedforward Neural Network and LSTM model for time series forecasting on short horizon:]() Collect electricity consumption in New York. Preprocess to corect date format. Optimal window size selection with the pattern into the data and some experimentation. Build the architecture of these models by iteration to find the hyperparameter optimization. DNN: MAE = 1.0032, LSTM: MAE = 1.0070.
 
   
 ## :mortar_board: Courses
