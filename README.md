@@ -160,7 +160,20 @@ Boosting does more to reduce bias than variance. For this reason, boosting tends
   
 * **Ensemble methods - Approach 1:** Models are trained on different view of the same dataset (Bagging, Boosting: man, median, vote). **Approach 2:** Models are trained on the same dataset but using different algoriths (Stacking). **Approach 3:** Models are trained on different datasets, selection of the top k models, train a Meta model. Ensemble weighted models.<p>
   
-* **Continuous(/al) Learning**
+* <img width="500" align="left" alt="Capture d’écran, le 2023-06-21 à 11 01 00" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/a163c9d9-dfe6-446e-9ccb-23383b61ce1f">**Continuous(/al) Learning**<br>Decrease performance over time on previously learned concepts == Catastrophic Frogetting <br><br><br><br><br><br><br><br><br><br><br>
+
+<img width="321" align="left" alt="Capture d’écran, le 2023-06-21 à 11 35 35" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/dda5bec8-c613-4b4f-adfd-d6f6f3a7a58b"> When new data comes in, we can observe a decrease in performance.<p>
+-> Retrain, fine-tune<p>
+Problem:<p>
+1. Need for a hudge data storage
+2. Catastrophic forgetting: When fine-tuned, models tend to forget past learned patterns.
+3. Model complexity has to grow... very hard to automatize.<br><br>
+
+<img width="400" align="right" alt="Capture d’écran, le 2023-06-21 à 11 45 39" src="https://github.com/MNLepage08/MNLepage08/assets/113123425/398f1c5b-b2fb-4f7e-bdd6-14022a67ce89">A way to maintain the performance of models is to combine new models with previous models using a meta-learner.<p>
+Factorize the data into model, Less data to store, More flexibility, Avoid catastrophic forgetting.
+
+* **Conclusion:** Ensemble model can be used to manage bias and variance. In the end, can be combined in many ways to improve prediction performances. Can almost always be used to select features. (most used features across weak learners). Can solve a lot of trouble data storage. Model = History is a vector of past observation. Forecast is a vector of expected future observation.
+
  
 </details>
   
