@@ -14,6 +14,9 @@
    
 4. [Use Deep Feedforward Neural Network and LSTM model for time series forecasting on short horizon:](https://github.com/MNLepage08/YCNG-233/blob/main/Time_Series_Course_8.ipynb) Collect electricity consumption in New York. Preprocess to correct date format. Optimal window size selection with the pattern into the data and some experimentation. Build the architecture of these models by iteration to find the hyperparameter optimization. DNN: MAE = 1.0032, LSTM: MAE = 1.0070.
 
+5. [Use different time series methods (statistics, machine learning and transfer learning) to make short-term forecasts based on short-term history: ](https://github.com/MNLepage08/YCNG-233/blob/main/Time_Series_Course_10.ipynb) Collection of 4 electricity consumption houses with different dates. Preprocess of dates, duplicates, and missing values. Use of ARIMA, SVM, linear regression, N-Beats and LSTM on a house dataset. No model outperforms the baseline (repeat last value, MAE=1.28). Use the 4 houses dataset with transfer learning method to improve the performance. Instance-based (MAE=1.20) and parameter-based (MAE=1.22).
+
+
   
 ## :mortar_board: Courses
 
