@@ -209,7 +209,15 @@ The decision function f is an implicit one, which is expected to be learned from
   [Kernel Mean Matching](https://adapt-python.github.io/adapt/generated/adapt.instance_based.KMM.html)<p>
   [trAdaBoost: Reverse boosting to find the weighting of each instance](https://adapt-python.github.io/adapt/generated/adapt.instance_based.TrAdaBoost.html#adapt-instance-based-tradaboost)
 
-* **Feature-Based:**
+* <img width="522" align="right" alt="Capture d’écran, le 2023-07-21 à 15 08 18" src="https://github.com/MNLepage08/YCNG-233/assets/113123425/5827e2d3-ea88-4d6b-b70d-10d3accd5e6a">**Feature-Based:** We have 2 different feature spaces. The difficulty is to find the proper encoding to create a common space = non-linear mapping. EX: can be a deep neural network,
+an encoder etc... We need to constrain to fit both original spaces into the same space.<p>
+  [Adversarial Discriminative Domain Adaptation](https://adapt-python.github.io/adapt/generated/adapt.feature_based.ADDA.html)<p>
+  [Deep CORrelation ALignment](https://adapt-python.github.io/adapt/generated/adapt.feature_based.DeepCORAL.html)<p>
+  [Wasserstein Distance Guided Representation Learning](https://adapt-python.github.io/adapt/generated/adapt.feature_based.WDGRL.html)
+
+* **Parameter-Based:** This approach is using ensemble methods such as stacking. See the previous session (Stacking).
+  
+* **Pretrained / Embedding:**
   
 </details>
   
