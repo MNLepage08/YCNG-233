@@ -177,7 +177,31 @@ Factorize the data into model, Less data to store, More flexibility, Avoid catas
 
 * **Conclusion:** Ensemble model can be used to manage bias and variance. In the end, can be combined in many ways to improve prediction performances. Can almost always be used to select features. (most used features across weak learners). Can solve a lot of trouble data storage. Model = History is a vector of past observation. Forecast is a vector of expected future observation.
 
- 
+</details>
+
+
+<details close>
+<summary>7. Transfer learning and its application on time series problems<p></summary>
+
+* [Transfer Learning:](https://arxiv.org/abs/1911.02685) The ideal scenario of machine learning is that there are abundant labelled training instances, which have the same distribution as the test data. According to the generalization theory of transfer, learning to transfer is the result of the generalization of experience. Realizing the transfer from one situation to another is possible, as long as a person generalizes his experience.<p>
+  More data == better accuracy (naive approach)<p>
+  Getting more data can be costly == for many tasks we have a limited amount
+of data<p>
+
+* <img width="402" align="right" alt="Capture d’écran, le 2023-07-21 à 13 34 24" src="https://github.com/MNLepage08/YCNG-233/assets/113123425/f4e40830-97e7-42b0-b493-0ad86e1eec1f">According to this theory, the prerequisite of transfer is that there needs to be a connection between two learning activities. Even if the two domains seems related, it could be misleading and doesn’t always facilitate learning. Ex: People who learn Spanish may experience difficulties in learning French, such as using the wrong vocabulary or conjugation. (Negative Transfer)
+
+* **Domain (D):** A domain is composed of 2 parts a Feature Space X and a marginal distribution P(X). D= {X, P(X)}. We relax the constrain on the label. If we have labels: $D = {(x, y)|x_i \in X, y_i \in Y, i = 1, ..., n} $
+
+* **Task (T):** A task is a label space Y and a decision function f. T = {Y, f}.
+The decision function f is an implicit one, which is expected to be learned from the sample data. Machine learning would approximate f:
+  Classification: $f(x_j) = {P(y_k|X_j) | y_k \in Y, k = 1, ..., |Y|}$<p>
+  A source domain and a source task: { $D_s, T_s$ }<p>
+  A target domain and a target task: { $D_t, T_t$ }
+
+* **Transfer Learning:** A method that utilizes the knowledge implied in the source domain(s) to improve the performance of the learned decision functions.<p>
+  Homogenous transfer: $X_s$ == $X_t$ and $Y_s$ == $Y_t$,  Ex: image to image (with time series forecasting, we are playing here)<p>
+  Heterogenous transfer: $X_s$ != $X_t$ and $Y_s$ != $Y_t$,  Ex: text to image
+  
 </details>
   
 ## :books: Bibliography
