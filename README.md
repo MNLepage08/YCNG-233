@@ -217,7 +217,20 @@ an encoder etc... We need to constrain to fit both original spaces into the same
 
 * **Parameter-Based:** This approach is using ensemble methods such as stacking. See the previous session (Stacking).
   
-* **Pretrained / Embedding:**
+* **Pretrained / Embedding:** Leverage deep learning capabilities
+  - Traditional Deep Learning. EX: two autoencoders for the source and the target domains, respectively. These two autoencoders share the same parameters. The encoder and the decoder both have two layers with activation functions.
+  - Deep adaptation network: Frozen layers + new deep layers, Fine tune pretrained network
+
+  <img width="418" align="right" alt="Capture d’écran, le 2023-07-21 à 16 22 39" src="https://github.com/MNLepage08/YCNG-233/assets/113123425/f74e34de-c8df-4f55-985a-08f998f5fa6d">Frozen layers + New layers: The idea is to learn concepts from a larger dataset and reapply it to a data-poor domain. If the source domain is very large, we can use a larger network. Embedding. [FineTuning](https://adapt-python.github.io/adapt/generated/adapt.parameter_based.FineTuning.html)
+
+  Time series embedding: Same representation for classification, forecast and anomaly detection and more... (next session)<p>
+  [TS2Vec: Towards Universal Representation of Time Series: ](https://arxiv.org/abs/2106.10466)Use Timestamp masking and random cropping to create pairs which are close. TS2Vec + SVM (classification), TS2Vec + linear regression, TS2Vec: anomaly detection. [GitHub](https://github.com/yuezhihan/ts2vec)<p>
+  [CoST](https://openreview.net/pdf?id=PilZY3omXV2), [GitHub](https://github.com/salesforce/CoST)<p>
+  Fine-tune > Embedding. Too much fine-tuning = catastrophic forgetting. In practice: use as-is, Fine-tune the last layers, Fine-tune all the network. At some point, you might reach the targeted accuracy.
+
+* Pre-trained network: [zero-shot learning](https://arxiv.org/pdf/2002.02887.pdf). Can we forecast a time series without any fitting?
+
+* Conclusion: Beware of negative transfer. Very hard to anticipate. Start with simple approach: Merge source and target data, Train a model on and use it on, Fine tune model trained on with, ...
   
 </details>
   
