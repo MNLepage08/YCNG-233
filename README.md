@@ -201,6 +201,15 @@ The decision function f is an implicit one, which is expected to be learned from
 * **Transfer Learning:** A method that utilizes the knowledge implied in the source domain(s) to improve the performance of the learned decision functions.<p>
   Homogenous transfer: $X_s$ == $X_t$ and $Y_s$ == $Y_t$,  Ex: image to image (with time series forecasting, we are playing here)<p>
   Heterogenous transfer: $X_s$ != $X_t$ and $Y_s$ != $Y_t$,  Ex: text to image
+
+* <img width="481" align="right" alt="Capture d’écran, le 2023-07-21 à 14 38 23" src="https://github.com/MNLepage08/YCNG-233/assets/113123425/085c44d3-2b95-4762-9d9e-d754f8f0166c">**Instance-Based:** Since $X_s$ == $X_t$ and $Y_s$ == $Y_t$, The simplest approach is to concatenate the datasets. Problem: the two datasets might not be drawn from the same distribution. Input space: Different feature distribution. Reweight instances in order to correct source and target distribution.<p>
+  A way to reweight instances in the loss function. Many algorithms exist:<p>
+  [Nearest Neighbors Weighting](https://adapt-python.github.io/adapt/generated/adapt.instance_based.NearestNeighborsWeighting.html)<p>
+  [Balanced Weighting](https://adapt-python.github.io/adapt/generated/adapt.instance_based.BalancedWeighting.html#adapt-instance-based-balancedweighting)<p>
+  [Kernel Mean Matching](https://adapt-python.github.io/adapt/generated/adapt.instance_based.KMM.html)<p>
+  [trAdaBoost: Reverse boosting to find the weighting of each instance](https://adapt-python.github.io/adapt/generated/adapt.instance_based.TrAdaBoost.html#adapt-instance-based-tradaboost)
+
+* **Feature-Based:**
   
 </details>
   
